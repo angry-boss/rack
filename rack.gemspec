@@ -25,10 +25,10 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.extra_rdoc_files = ['README.rdoc', 'CHANGELOG.md', 'CONTRIBUTING.md']
 
-  s.author = 'Leah Neukirchen'
+  s.author = 'Ilmira Shaikhraznova'
   s.email = 'ilmirashaikhraznova@gmail.com'
 
-  s.homepage = 'https://github.com/rack/rack'
+  s.homepage = 'https://github.com/angry-boss/rack'
 
   s.required_ruby_version = '>= 2.3.0'
 

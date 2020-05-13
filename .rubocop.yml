@@ -50,7 +50,7 @@ Layout/SpaceBeforeFirstArg:
 Layout/SpaceInsideHashLiteralBraces:
   Enabled: true
 
-Layout/Tab:
+Layout/IndentationStyle:
   Enabled: true
 
 Layout/TrailingWhitespace:
