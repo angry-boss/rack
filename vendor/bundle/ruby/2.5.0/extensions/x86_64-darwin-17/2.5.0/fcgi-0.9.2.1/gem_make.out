@@ -1,0 +1,33 @@
+current directory: /Users/ilmira/Documents/dev/rack/vendor/bundle/ruby/2.5.0/gems/fcgi-0.9.2.1/ext/fcgi
+/Users/ilmira/.rvm/rubies/ruby-2.5.5/bin/ruby -I /Users/ilmira/.rvm/rubies/ruby-2.5.5/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200513-83695-8qe0yh.rb extconf.rb
+checking for fcgiapp.h... yes
+checking for FCGX_Accept() in -lfcgi... yes
+creating Makefile
+
+current directory: /Users/ilmira/Documents/dev/rack/vendor/bundle/ruby/2.5.0/gems/fcgi-0.9.2.1/ext/fcgi
+make "DESTDIR=" clean
+
+current directory: /Users/ilmira/Documents/dev/rack/vendor/bundle/ruby/2.5.0/gems/fcgi-0.9.2.1/ext/fcgi
+make "DESTDIR="
+compiling fcgi.c
+fcgi.c:280:39: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  len = FCGX_PutStr(RSTRING_PTR(str), RSTRING_LEN(str), stream);
+        ~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~
+/Users/ilmira/.rvm/rubies/ruby-2.5.5/include/ruby-2.5.0/ruby/ruby.h:975:6: note: expanded from macro 'RSTRING_LEN'
+     RSTRING_EMBED_LEN(str) : \
+     ^~~~~~~~~~~~~~~~~~~~~~
+/Users/ilmira/.rvm/rubies/ruby-2.5.5/include/ruby-2.5.0/ruby/ruby.h:971:6: note: expanded from macro 'RSTRING_EMBED_LEN'
+     (long)((RBASIC(str)->flags >> RSTRING_EMBED_LEN_SHIFT) & \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fcgi.c:280:39: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  len = FCGX_PutStr(RSTRING_PTR(str), RSTRING_LEN(str), stream);
+        ~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~
+/Users/ilmira/.rvm/rubies/ruby-2.5.5/include/ruby-2.5.0/ruby/ruby.h:976:28: note: expanded from macro 'RSTRING_LEN'
+     RSTRING(str)->as.heap.len)
+     ~~~~~~~~~~~~~~~~~~~~~~^~~
+2 warnings generated.
+linking shared-object fcgi.bundle
+
+current directory: /Users/ilmira/Documents/dev/rack/vendor/bundle/ruby/2.5.0/gems/fcgi-0.9.2.1/ext/fcgi
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 fcgi.bundle ./.gem.20200513-83695-14j3gw0
